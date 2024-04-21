@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/css/MainTemplate.css">
+    <link rel="stylesheet" href="~/Content/css/side_bar.css">
+    <link href="~/Content/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome/css/solid.css" rel="stylesheet" />
+</head>
+<body onload="formload()">
+    <div class="container">
+        <div class="header">
+            <div class="site-details">
+                <div class="site-logo">
+                    <a href="/Home/Index">
+                        <img class="site_logo_image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="site-name">
+                    <a class="site_name_label" href="/Home/Index">LMS-UoVT</a>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="user_name_text">
+                    <label class="user_name" for="user" id="user_name_id">User Name</label>
+                </div>
+                <div class="user_role_text">
+                    <label class="user_role" for="user" id="user_role_id">User Role</label>
+                </div>
+                <div class="notification_div">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="user_details_image">
+                    <img class="user_image" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
+                </div>
+                <div class="sign_out_div" onclick="sign_out()">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="side-bar" id="side-bar-id">
+            <div id="side-bar-open-id" class="side-bar-open" onclick="open_nav()">
+                <i class="fa fa-arrow-circle-right"></i>
+            </div>
+            <div id="side-bar-close-id" class="side-bar-close" onclick="close_nav()">
+                <i class="fa fa-arrow-circle-left"></i>
+            </div>
+            <a class="side-bar-link" href='/Student/Index'>
+                <i class="fa-solid fa-user"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Student</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-user-graduate"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Teacher</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-book-open"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Course</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-laptop-code"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Exam</div>
+            </a>
+            <a class="side-bar-link" href="#">
+                <i class="fas fa-book-reader"></i>
+                <div id="side_bar_link_desc_id" class="side-bar-link-desc">Result</div>
+            </a><br /><br />
+            <div class="side-bar-actions">
+                <a class="side-bar-link" href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div id="side_bar_link_desc_id" class="side-bar-link-desc">Notifications</div>
+                </a>
+                <a class="side-bar-link" href="#">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    <div id="side_bar_link_desc_id" class="side-bar-link-desc">Sign Out</div>
+                </a>
+                <a class="side-bar-link" href="#">
+                    <img class="user_image_side_bar" src="~/Content/Temp_Images/user_image.png" id="user_icon_id" alt="" srcset="">
+                    <div id="side_bar_link_desc_id" class="side-bar-link-desc">User Name</div>
+                </a>
+            </div>
+
+        </div>
+        <div class="main-container">
+            @RenderBody()
+        </div>
+    </div>
+    <script src="~/Content/js/mainPage.js"></script>
+
+</body>
+</html>

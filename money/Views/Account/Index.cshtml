@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Money";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/css/LoginTemplate.css">
+    <link href="~/Content/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="~/Content/fontawesome/css/solid.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="login-container">
+        <img class="site_logo_image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
+        <h2>Login</h2>
+        <input id="txtEmail" type="text" name="email" placeholder="Email" onkeyup="functionLoginValidation()">
+        <input id="txtPassword" type="password" name="password" placeholder="Password" onkeyup="functionLoginValidation()">
+        <input type="submit" value="Login" id="loginButton" onclick="functionLogin()">
+        <div class="signup-link">
+            <a href="/Account/FogotPassword">Forgotten password?</a>
+        </div>
+    </div>
+
+    <script src="~/Content/js/LoginScript.js"></script>
+</body>
+</html>
