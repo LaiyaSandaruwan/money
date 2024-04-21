@@ -1,0 +1,21 @@
+﻿
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart-container,
+.main-image-container {
+    flex: 1 1 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main-image{
+    width:100%
+}
+
+@media (min-width: 600px) {
+    .chart-container, .main-image-container {
+        flex: 1 1 50%;
+    }
+}

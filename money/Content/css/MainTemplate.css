@@ -10,8 +10,8 @@
 .header {
     width: 100%;
     display: flex;
-    background-color: #750a18;
-    color: #f9cf16;
+    background-color: #049e97;
+    color: white;
 }
 .site-details {
     width: 500px;
@@ -38,11 +38,11 @@
 .site_name_label {
     font-size: 25px;
     text-decoration: none;
-    color: #f9cf16;
+    color: white;
 }
-.site_name_label:hover{
-    color:white;
-}
+    .site_name_label:hover {
+        color: #04ecdc;
+    }
 .user-details {
     flex-grow: 1;
     display: flex;
@@ -109,7 +109,7 @@
     }
     .header {
         display: flex;
-        background-color: #750a18;
+        background-color: #049e97;
         color: #f9cf16;
     }
     .side-bar-actions {
@@ -118,13 +118,17 @@
     .site-name{
         width:200px;
     }
+    .user-details {
+        display: none;
+        width: 0px;
+    }
 }
 
 .sign_out_div:hover {
-    color:white;
+    color: #04ecdc;
 }
 .notification_div:hover {
-    color: white;
+    color: #04ecdc;
 }
 .user_image:hover {
     opacity: 0.5;

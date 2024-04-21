@@ -3,7 +3,7 @@
     padding: 8px 8px 8px 38px;
     text-decoration: none;
     font-size: 15px;
-    color: #fac495;
+    color: white;
     display: block;
     transition: 0.3s;
 }
@@ -11,20 +11,20 @@
 
 .side-bar.expanded {
     width: 250px;
-    background-color: #750a18;
+    background-color: #049e97;
     padding-top: 10px;
     height: 100vh;
 }
 
 .side-bar.collapsed {
     width: 50px;
-    background-color: #750a18;
+    background-color: #049e97;
     padding-top: 10px;
     height: 100vh;
 }
 
 .side-bar a:hover {
-    color: #f1f1f1;
+    color: #04ecdc;
 }
 
 #main {
@@ -35,20 +35,20 @@
 .side-bar-close {
     padding-left: 200px;
     font-size: 35px;
-    color: #fac495;
+    color: white;
 }
 
 .side-bar-open {
     padding-left: 10px;
     font-size: 35px;
-    color: #fac495;
+    color: white;
     display: none;
 }
 
-.side-bar-close:hover,
-.side-bar-open:hover{
-    color:white;
-}
+    .side-bar-close:hover,
+    .side-bar-open:hover {
+        color: #04ecdc;
+    }
 .side-bar-link-desc{
     width:150px;
 }

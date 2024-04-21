@@ -1,0 +1,56 @@
+﻿.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.chart-details {
+    margin-bottom: 20px;
+}
+
+.pie-chart {
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 150px, 300px, 0);
+}
+
+.slice1 {
+    background-color: #ff5733;
+    transform: rotate(0deg);
+}
+
+.slice2 {
+    background-color: #f0c419;
+    transform: rotate(60deg);
+}
+
+.slice3 {
+    background-color: #4caf50;
+    transform: rotate(120deg);
+}
+
+.slice4 {
+    background-color: #1976d2;
+    transform: rotate(180deg);
+}
+
+.slice5 {
+    background-color: #9c27b0;
+    transform: rotate(240deg);
+}
+
+.slice6 {
+    background-color: #ff9800;
+    transform: rotate(300deg);
+}

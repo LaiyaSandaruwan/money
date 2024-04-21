@@ -1,4 +1,66 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<h1>Home-Index</h1>
+
+<link rel="stylesheet" href="~/Content/css/Homecss.css">
+<link rel="stylesheet" href="~/Content/css/PiChartcss.css">
+<div class="main-container">
+    <div class="chart-container">
+        <div class="chart-details">
+            <table class="chart-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Color</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Slice 1</td>
+                        <td style="background-color: #ff5733;"></td>
+                        <td>16.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Slice 2</td>
+                        <td style="background-color: #f0c419;"></td>
+                        <td>16.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Slice 3</td>
+                        <td style="background-color: #4caf50;"></td>
+                        <td>16.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Slice 4</td>
+                        <td style="background-color: #1976d2;"></td>
+                        <td>16.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Slice 5</td>
+                        <td style="background-color: #9c27b0;"></td>
+                        <td>16.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Slice 6</td>
+                        <td style="background-color: #ff9800;"></td>
+                        <td>16.67%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pie-chart">
+            <!-- Your pie chart code here -->
+            <div class="slice slice1"></div>
+            <div class="slice slice2"></div>
+            <div class="slice slice3"></div>
+            <div class="slice slice4"></div>
+            <div class="slice slice5"></div>
+            <div class="slice slice6"></div>
+        </div>
+    </div>
+    <div class="main-image-container">
+        
+        <img class="main-image" src="~/Content/Temp_Images/logo.png" alt="" srcset="">
+    </div>
+</div>
